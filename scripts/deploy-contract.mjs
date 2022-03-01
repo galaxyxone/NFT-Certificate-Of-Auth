@@ -15,3 +15,5 @@ async function deployContract() {
       console.error(error);
       process.exit(1);
     });
+
+    // I guess im the only one doing this shit :/
