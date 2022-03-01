@@ -1,3 +1,10 @@
 {
-  "name": "hardhat-project"
+  "name": "hardhat-project",
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@openzeppelin/contracts": "^4.5.0",
+    "dotenv": "^16.0.0",
+    "hardhat": "^2.8.4",
+    "nft.storage": "^6.0.0"
+  }
 }
