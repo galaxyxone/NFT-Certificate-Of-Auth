@@ -5,13 +5,16 @@ require("@nomiclabs/hardhat-ethers");
 require('dotenv').config();
 const { PRIVATE_KEY } = process.env;
 module.exports = {
-  defaultNetwork: "PolygonMumbai",
+  defaultNetwork: "matic",
   networks: {
     hardhat: {
     },
-     PolygonMumbai: {
-      url: "https://rpc-mumbai.maticvigil.com",
-      accounts: [PRIVATE_KEY]
+     matic: {
+      url: "https://rpc-mainnet.maticvigil.com/",
+      gasPrice:1100000000,
+      accounts: [PRIVATE_KEY],
+      chainId:137,
+
     }
   },
   solidity: {
